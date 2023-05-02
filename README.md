@@ -2,7 +2,7 @@
 
 ![Design preview for the News homepage coding challenge](./design/desktop-preview.jpg)
 
-## Welcome! 👋
+## Welcome! 👋 URL: https://64511f80b3b74b14816b0fd4--glittery-lokum-6079f5.netlify.app/
 
 Thanks for checking out this front-end coding challenge.
 
