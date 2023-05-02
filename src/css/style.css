@@ -1,0 +1,218 @@
+/*  RESET  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-height: 100vh;
+    font-family: Inter-Regular;
+}
+
+:root {
+    --test: 1px solid red;
+
+    --Soft-orange: hsl(35, 77%, 62%);
+    --Soft-red: hsl(5, 85%, 63%);
+
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    --Very-dark-blue: hsl(240, 100%, 5%);
+}
+
+
+
+/* /RESET/ */
+
+
+/*  DESKTOP  */
+
+@media (min-width: 376px) {
+    h1, h2, h3, button {
+        font-family: Inter-ExtraBold;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5vh 10vw;
+    }
+    
+    #menu {
+        width: 40vw;
+        color: var(--Dark-grayish-blue);
+    }
+
+    #img-menu, #close-menu {
+         display: none;
+    }
+    
+    header #menu #menu-options {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header #menu #menu-options li {
+        cursor: pointer;
+    }
+    
+    
+    
+    
+    main {    
+        margin: 5vh 10vw;
+        display: grid;
+        grid-template-columns: 55vw auto;
+        gap: 5vh;
+    }
+    
+    main .primary {
+        display: grid;
+        grid-template-columns: auto 50%;
+        gap: 2vh 5vw;
+    }
+    
+    main .primary #primary-img {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+    main .primary h1 {
+        grid-row-start: 2;
+        grid-row-end: 4;
+        font-size: 30pt;
+    }
+
+    main .primary p {
+        color: var(--Dark-grayish-blue);
+        font-size: 12pt;
+    }
+
+    main .primary button {
+        background-color: var(--Soft-red);
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        border: none;
+        color: var(--Off-white);
+        padding: 1vh 1vw;
+        width: 15vw;
+        cursor: pointer;
+    }
+
+
+
+
+    main article {
+        background-color: var(--Very-dark-blue);
+        padding: 3vh 2vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 3vh;
+    }
+
+    main article div {
+        border-bottom: 1px solid var(--Dark-grayish-blue);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;        
+    }
+
+    main article h1 {
+        color: var(--Soft-orange);
+        font-size: 24pt;
+        font-family: Inter-Bold;
+    }
+
+    main article h3 {
+        color: var(--Off-white);
+        font-size: 13pt;
+        margin-bottom: 2vh;
+        cursor: pointer;
+    }
+
+    main article p {
+        color: var(--Grayish-blue);
+        font-size: 10pt;
+        line-height: 3vh;
+    }
+
+
+
+
+    main section {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        justify-content: space-between;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    main section div {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 1.5vh;
+    }
+
+    main section div img {
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+
+    main section div h1 {
+        color: var(--Grayish-blue);
+    }
+
+    main section div h3 {
+        cursor: pointer;
+    }
+
+    main section div p {
+        color: var(--Dark-grayish-blue);
+    }
+}
+
+/* /DESKTOP/ */
+
+@font-face {
+    font-family: Inter-Regular;
+    src: url("../../assets/fonts/static/Inter-Regular.ttf");
+}
+
+@font-face {
+    font-family: Inter-ExtraBold;
+    src: url("../../assets/fonts/static/Inter-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: Inter-Bold;
+    src: url("../../assets/fonts/static/Inter-Bold.ttf");
+}
+
+.last {
+    border: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+main .primary button:active {
+    background-color: var(--Very-dark-blue);
+}
+
+main article h3:active {
+    color: var(--Soft-orange);
+}
+
+main section div h3:active {
+    color: var(--Soft-red);
+}
+
+header #menu #menu-options li:active {
+    color: var(--Soft-red);
+}

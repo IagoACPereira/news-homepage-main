@@ -1,0 +1,139 @@
+/*  MOBILE  */
+
+@media (max-width: 375px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5vh 5vw;
+    }
+
+    #menu #img-menu {
+        display: block;
+    }
+
+    #menu-options {
+        display: none;
+        list-style: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: var(--Off-white);
+        width: 70vw;
+        height: 100vh;
+        padding: 5vh 10vw;
+    }
+
+    #menu-options li {
+        margin-bottom: 3vh;
+        font-weight: bold;
+        color: var(--Very-dark-blue);
+        font-size: 14pt;
+    }
+
+    #menu-options li #close-menu {
+        display: block;
+        margin-left: 80%;
+        margin-bottom: 5vh;
+    }
+
+
+
+
+
+    main {
+        margin: 5vh 5vw;
+    }
+
+    main .primary {
+        margin-bottom: 10vh;
+    }
+
+    main .primary img,
+    main .primary h1,
+    main .primary p {
+        margin-bottom: 3vh;
+    }
+
+    main .primary p {
+        color: var(--Dark-grayish-blue);
+    }
+
+    main .primary button {
+        font-family: Inter-Bold;
+        padding: 2vh 10vw;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        border: none;
+        background-color: var(--Soft-red);
+        color: var(--Off-white);
+    }
+
+
+
+
+
+    main article {
+        background-color: var(--Very-dark-blue);
+        padding: 3vh 5vw;
+        margin-bottom: 10vh;
+    }
+
+    main article div {
+        padding: 4vh 0;
+        border-bottom: 1px solid var(--Dark-grayish-blue);
+    }
+
+    main article h1 {
+        color: var(--Soft-orange);
+        letter-spacing: 2px;
+        font-family: Inter-Bold;
+        font-size: 24pt;
+    }
+
+    main article h3 {
+        color: var(--Off-white);
+        margin-bottom: 2vh;
+        letter-spacing: 1px;
+        font-family: Inter-Bold;
+    }
+
+    main article p {
+        color: var(--Grayish-blue);
+    }
+
+
+
+    
+
+    main section div {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-bottom: 5vh;
+    }
+
+    main section div img {
+        grid-row-start: 1;
+        grid-row-end: 4;
+        margin-right: 5vw;
+    }
+
+    main section div h1 {
+        color: var(--Grayish-blue);
+        font-size: 24pt;
+        font-family: Inter-Bold;
+        margin-bottom: 1vh;
+    }
+
+    main section div h3 {
+        margin-bottom: 1vh;
+        font-size: 12pt;
+    }
+
+    main section div p {
+        color: var(--Dark-grayish-blue);
+        font-size: 11pt;
+    }
+}
+
+/* /MOBILE/ */
